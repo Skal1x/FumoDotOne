@@ -28,7 +28,7 @@ export default function Header({ callback, showMenu, chars, types, rarities, col
                     <Image src={'/images/logo-light-experimental.svg'} layout={'fill'} alt={'Fumo.One Logo'} objectFit={'contain'} objectPosition={'left center'}/>
                 </div>
                 <div className={styles.logoMobile}>
-                    <Image src={'/images/logo-light-experimental.svg'} height={66} width={160} alt={'Fumo.One Logo'} objectFit={'contain'} objectPosition={'center center'}/>
+                    <Image src={'/images/logo-light-experimental.svg'} height={66} width={130} alt={'Fumo.One Logo'} objectFit={'contain'} objectPosition={'center center'}/>
                 </div>
                 <div className={styles.menuToggle} onClick={() => toggleTab('menu')} >
                     <Image src={'/images/menu.svg'} width={32} height={32} alt='Menu Icon' />
