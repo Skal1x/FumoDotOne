@@ -1,0 +1,23 @@
+{
+  "name": "fumo-info",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "contentful": "^9.1.32",
+    "next": "12.1.6",
+    "rc-slider": "^10.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.30.7"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6"
+  }
+}

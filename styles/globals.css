@@ -1,0 +1,81 @@
+:root {
+    --bg: #0E0014;
+    --pri: #DB2B39;
+    --sec: #EEF0F2;
+}
+
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fonts/lato/Lato-Thin.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/merriweather/Merriweather-Black.ttf');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/merriweather/Merriweather-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/merriweather/Merriweather-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/fonts/merriweather/Merriweather-Light.ttf');
+    font-weight: 300;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Merriweather';
+  background-color: var(--sec);
+}
+
+a {
+  color: var(--pri);
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h4 {
+    font-family: 'Lato';
+}
