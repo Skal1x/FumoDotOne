@@ -29,20 +29,12 @@ export default function FilterMenu({ showFilter, chars, types, rarities, colors,
 
         const addSliderListener = (element) => {
             element.current.addEventListener("input", (e) => {
-                const leftVal = leftSlider.current.value;
-                const rightVal = rightSlider.current.value;
+                const leftVal = parseInt(leftSlider.current.value);
+                const rightVal = parseInt(rightSlider.current.value);
                 const yearDiff = maxValue - minValue;
     
                 const leftStyle = `${((leftVal - minValue) / yearDiff) * 100}%`;
                 const rightStyle = `${100 - (((rightVal - minValue) / yearDiff) * 100)}%`;
-
-                if (leftVal === maxValue) {
-                    leftSlider.current.style.zIndex = 51;
-                    rightSlider.current.style.zIndex = 50;
-                } else {
-                    leftSlider.current.style.zIndex = 50;
-                    rightSlider.current.style.zIndex = 51;
-                }
     
                 if (rightVal - leftVal < 0) {
                     if (e.target.id === 'rangeMin') {
@@ -55,6 +47,14 @@ export default function FilterMenu({ showFilter, chars, types, rarities, colors,
                     maxInput.current.value = rightSlider.current.value;
                     progress.current.style.left = leftStyle;
                     progress.current.style.right = rightStyle;
+                }
+
+                if (leftVal === maxValue) {
+                    leftSlider.current.style.zIndex = 51;
+                    rightSlider.current.style.zIndex = 50;
+                } else {
+                    leftSlider.current.style.zIndex = 50;
+                    rightSlider.current.style.zIndex = 51;
                 }
             })
         }
