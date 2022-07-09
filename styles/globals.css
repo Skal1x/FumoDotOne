@@ -65,6 +65,12 @@ body {
   margin: 0;
   font-family: 'Merriweather';
   background-color: var(--sec);
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 a {
