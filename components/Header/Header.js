@@ -1,4 +1,4 @@
-import styles from './header.module.css';
+import styles from './Header.module.css';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { useMediaQuery } from '../../helpers';

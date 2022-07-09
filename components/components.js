@@ -1,5 +1,5 @@
 import Header from "./Header/Header";
-import Card from "./card/card";
+import Card from "./Card/Card";
 import FumoGrid from "./FumoGrid/FumoGrid";
 import FumoCard from "./FumoCard/FumoCard";
 import FilterMenu from "./FilterMenu/FilterMenu";
